@@ -5,7 +5,7 @@ type FintocWidget = {
 }
 
 type Fintoc = {
-  create: (arg: {}) => FintocWidget
+  create: (arg: any) => FintocWidget
 }
 
 interface FintocDocument extends Document {
