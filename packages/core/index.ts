@@ -7,7 +7,7 @@
 export function getFintocObject(): Promise<Fintoc> {
   return new Promise((resolve, reject) => {
 
-    const modifiedDocument = document as FintocDocument;
+    const modifiedWindow = window as unknown as FintocWindow;
     let script = document.getElementById('fintoc-js');
 
     if (!script) {
@@ -15,12 +15,12 @@ export function getFintocObject(): Promise<Fintoc> {
 
       script.src = 'https://js.fintoc.com/v1/';
       script.id = 'fintoc-js';
-      script.onload = function() {
-        resolve(modifiedDocument.Fintoc);
+      script.onload = function () {
+        resolve(modifiedWindow.Fintoc);
       };
       document.head.appendChild(script);
     } else {
-      resolve(modifiedDocument.Fintoc);
+      resolve(modifiedWindow.Fintoc);
     }
 
     setTimeout(() => {

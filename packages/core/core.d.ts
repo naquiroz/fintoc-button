@@ -8,6 +8,6 @@ type Fintoc = {
   create: (arg: any) => FintocWidget
 }
 
-interface FintocDocument extends Document {
+interface FintocWindow extends Window {
   Fintoc: Fintoc
 }

@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
-import { getFintocObject } from '~/core';
+import { getFintocObject } from '../core';
 
-export async function FintocButton(props: {}) {
+
+export function FintocButton(props: any) {
   const [widget, setWidget] = useState<FintocWidget|null>(null);
 
   const onClick = () => {
