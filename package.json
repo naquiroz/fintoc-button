@@ -1,0 +1,26 @@
+{
+  "name": "fintoc-button",
+  "version": "0.1.0",
+  "description": "A multi-language, multi-purpose button to use the Fintoc Widget",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/naquiroz/fintoc-button.git"
+  },
+  "keywords": [
+    "fintoc",
+    "frontend",
+    "react",
+    "vue",
+    "payment"
+  ],
+  "contributors": [
+    "Nicolás Quiroz <nicolas.quiroz@thenotcompany.com>",
+    "Daniel Leal <daniel@fintoc.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/naquiroz/fintoc-button/issues"
+  },
+  "homepage": "https://github.com/naquiroz/fintoc-button#readme"
+}
